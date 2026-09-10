@@ -4,7 +4,7 @@ import { RegisterPage } from '../pages/registerPage.js';
 import { registerData } from '../data/registerData.js';
 
 
-test(' TC 1 Regis - Daftar Akun dengan Data Valid', async ({ page }) =>{
+test(' TC 1 Regis Positive - Daftar Akun dengan Data Valid', async ({ page }) =>{
     const homePage = new HomePage(page);
     const registerPage = new RegisterPage(page);
     const username = `user${Date.now()}`;

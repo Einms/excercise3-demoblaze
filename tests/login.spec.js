@@ -12,7 +12,7 @@ test('TC 1 Login Positive - Login dengan Data Valid', async ({ page }) =>{
     await homePage.clickLogin();
 
     await loginPage.login(validLogin.username, validLogin.password);
-    await expect(homePage.welcomeUser).toContainText(loginData.username); // Assertion
+    await expect(homePage.welcomeUser).toContainText(validLogin.username); // Assertion
 });
 
 test('TC 2 Login Negative - Login dengan Username Tidak Terdaftar', async ({ page }) =>{

@@ -21,7 +21,7 @@ export const loginTestData = [
     },
     {
         username: 'sipaling',
-        password: 'Dummy',
+        password: '',
         expected: 'password kosong'
     }
 ]
